@@ -21,9 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 24px 156px;
   margin: 0 auto;
-  width: 1128px;
 }
 
 .gallery-item {
@@ -37,3 +35,48 @@
   object-fit: cover;
   display: block;
 }
+
+.feedback-form{
+  display: flex;
+  flex-direction:column;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.btn-form{
+  display: flex;
+  width: 80px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  margin: 0 auto;
+  background-color: rgb(232, 176, 187);
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.feedback-form{
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 14px;
+
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+}
+
+.label-form{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 17px;
+}
+

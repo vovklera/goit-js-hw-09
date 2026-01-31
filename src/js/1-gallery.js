@@ -2,7 +2,6 @@ import SimpleLightbox from "simplelightbox";
 // Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-
 const images = [
   {
     preview:
@@ -68,7 +67,6 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
-
 
 const container = document.querySelector(".gallery");
 
