@@ -9,10 +9,10 @@ const form = document.querySelector(".feedback-form");
 const emailInput = form.elements.email;
 const messageInput = form.elements.message;
 
-form.addEventListener("submit", handleSubmit);
-
-form.addEventListener("input", onFormInput);
 populateInput();
+
+form.addEventListener("submit", handleSubmit);
+form.addEventListener("input", onFormInput);
 
 function onFormInput(event) {    
     const { name, value } = event.target;
@@ -32,7 +32,6 @@ function populateInput() {
         formData.message = newInput.message;
     }
 };
-console.log(formData);
 
 function handleSubmit(event) {
     event.preventDefault();
