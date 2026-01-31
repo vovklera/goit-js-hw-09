@@ -89,5 +89,5 @@ function createGallery(arr) {
 const lightBox = new SimpleLightbox('.gallery a', { 
     captionsData: "alt",
     captionPosition: "bottom",
-    animationSpeed: "250"
+    captionDelay: 250
  });

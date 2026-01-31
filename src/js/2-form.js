@@ -27,18 +27,25 @@ function populateInput() {
     if (newInput) {
         emailInput.value = newInput.email;
         messageInput.value = newInput.message;
+    
+        formData.email = newInput.email;
+        formData.message = newInput.message;
     }
 };
+console.log(formData);
 
 function handleSubmit(event) {
     event.preventDefault();
 
     if (!emailInput.value || !messageInput.value) {
         console.log("Fill please all fields");
+        return;
     } else {
         console.log(formData);
     };
 
     event.currentTarget.reset();
+    formData.email = "";
+    formData.message = "";
     localStorage.removeItem(STORAGE_KEY);
 };
